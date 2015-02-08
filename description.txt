@@ -1,0 +1,10 @@
+What should it do (commands):
+
+  Add virtualhost
+  - add
+
+  Remove virtualhost
+  - remove
+
+  Show virtualhosts
+  - show
