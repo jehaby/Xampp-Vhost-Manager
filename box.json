@@ -1,0 +1,6 @@
+{
+  "directories": ["src/", "vendor/"],
+  "main": "bin/xampp-vhost-manager",
+  "output": "xampp-vhost-manager.phar",
+  "stub": true
+}
