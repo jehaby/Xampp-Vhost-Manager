@@ -5,17 +5,20 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 
-class HelloCommand extends Command
-{
+class RemoveHost extends Command {
+
     protected function configure()
     {
         $this
-            ->setName('hello')
-            ->setDescription('Say hello')
+            ->setName('remove')
+            ->setDescription('Remove the host from /etc/hosts and httpd-vhosts.conf')
         ;
     }
+
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('Hello World');
+        $output->writeln('To be written');
     }
+
+
 }

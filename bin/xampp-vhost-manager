@@ -6,7 +6,15 @@ require __DIR__.'/../vendor/autoload.php';
 use Jehaby\XamppVhostManager;
 use Symfony\Component\Console\Application;
 
+define('HOSTS', '/etc/hosts');
+define('HTDOCS', '/home/urf/myprograms/bitrix/');
+define('HTTPD_VHOSTS', '/opt/lampp/etc/extra/httpd-vhosts.conf');
+define('USER', 'urf');
+define('GROUP', 'urf');
+
+
 $application = new Application('', '@package_version@');
-$application->add(new XamppVhostManager\HelloCommand);
-//$application->add(new Command\UpdateCommand());
+$application->add(new XamppVhostManager\AddHost());
+$application->add(new XamppVhostManager\RemoveHost());
+$application->add(new XamppVhostManager\ShowHosts());
 $application->run();

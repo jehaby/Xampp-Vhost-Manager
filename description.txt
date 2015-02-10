@@ -8,3 +8,8 @@ What should it do (commands):
 
   Show virtualhosts
   - show
+
+
+
+
+  Requires PHP 5.4+
